@@ -1,0 +1,40 @@
+<boards>
+  <board>
+    <id>PSOC4-GENERIC</id>
+    <category>PSoC 4 BSPs</category>
+    <board_uri>https://github.com/cypresssemiconductorco/TARGET_PSOC4-GENERIC</board_uri>
+    <chips>
+      <mcu>CY8C4548AZI-S485</mcu>
+    </chips>
+    <name>PSOC4-GENERIC</name>
+    <summary>This board support package is intended for creating custom PSoC 4 BSPs.</summary>
+    <prov_capabilities>psoc6</prov_capabilities>
+    <!-- Here are the capabilities that are used by ModusToolbox that can be enabled in the BSP -->
+    <!--prov_capabilities>psoc4 mcu_gp std_crypto arduino j2 capsense capsense_button capsense_linear_slider capsense_radial_slider capsense_touchpad led rgb_led switch pdm i2s fram smart_io ble memory memory_i2c</prov_capabilities-->
+    <description><![CDATA[
+        <div class="category">Kit Features:</div><ul>
+        <li>This is a generic template, there is no corresponding physical board</li>
+        <li>This is manifest can also be used to allow the board to show up in the ModusToolbox tools</li>
+        </ul><p/>
+
+        <div class="category">Kit Contents:</div><ul>
+        <li>NA</li>
+        </ul>
+    ]]></description>
+    <documentation_url>https://github.com/cypresssemiconductorco/TARGET_PSOC4-GENERIC</documentation_url>
+    <versions>
+      <version>
+        <num>Latest 0.X release</num>
+        <commit>latest-v0.X</commit>
+      </version>
+      <version>
+        <num>0.5.0 release</num>
+        <commit>release-v0.5.0</commit>
+      </version>
+      <version>
+        <num>Development build</num>
+        <commit>develop</commit>
+      </version>
+    </versions>
+  </board>
+</boards>
