@@ -1,8 +1,8 @@
 /*******************************************************************************
-* File Name: cycfg.c
+* File Name: cycfg_routing.h
 *
 * Description:
-* Wrapper function to initialize all generated code.
+* Establishes all necessary connections between hardware elements.
 * This file was automatically generated and should not be modified.
 * Tools Package 2.2.0.2801
 * mtb-pdl-cat2 1.0.0.2377
@@ -26,11 +26,22 @@
 * limitations under the License.
 ********************************************************************************/
 
-#include "cycfg.h"
+#if !defined(CYCFG_ROUTING_H)
+#define CYCFG_ROUTING_H
 
-void init_cycfg_all(void)
-{
-	init_cycfg_system();
-	init_cycfg_routing();
-	init_cycfg_pins();
+#if defined(__cplusplus)
+extern "C" {
+#endif
+
+#include "cycfg_notices.h"
+static inline void init_cycfg_routing(void) {}
+#define init_cycfg_connectivity() init_cycfg_routing()
+#define ioss_0_port_3_pin_2_HSIOM P3_2_CPUSS_SWD_DATA
+#define ioss_0_port_3_pin_3_HSIOM P3_3_CPUSS_SWD_CLK
+
+#if defined(__cplusplus)
 }
+#endif
+
+
+#endif /* CYCFG_ROUTING_H */

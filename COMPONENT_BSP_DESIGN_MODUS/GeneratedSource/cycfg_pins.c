@@ -4,10 +4,10 @@
 * Description:
 * Pin configuration
 * This file was automatically generated and should not be modified.
-* Tools Package 2.1.0.1266
-* psoc4pdl 1.0.0.912
-* personalities_2.0 2.0.0.0
-* udd_2.0 2.0.0.306
+* Tools Package 2.2.0.2801
+* mtb-pdl-cat2 1.0.0.2377
+* personalities 3.0.0.0
+* udd 3.0.0.746
 *
 ********************************************************************************
 * Copyright 2020 Cypress Semiconductor Corporation
@@ -31,7 +31,7 @@
 const cy_stc_gpio_pin_config_t CYBSP_SWDIO_config = 
 {
 	.outVal = 1,
-	.driveMode = CY_GPIO_DM_PULLUP_IN_OFF,
+	.driveMode = CY_GPIO_DM_STRONG,
 	.hsiom = CYBSP_SWDIO_HSIOM,
 	.intEdge = CY_GPIO_INTR_DISABLE,
 	.vtrip = CY_GPIO_VTRIP_CMOS,
@@ -42,10 +42,18 @@ const cy_stc_gpio_pin_config_t CYBSP_SWDIO_config =
 	.vrefSel = 0UL,
 	.vohSel = 0UL,
 };
+#if defined (CY_USING_HAL)
+	const cyhal_resource_inst_t CYBSP_SWDIO_obj = 
+	{
+		.type = CYHAL_RSC_GPIO,
+		.block_num = CYBSP_SWDIO_PORT_NUM,
+		.channel_num = CYBSP_SWDIO_PIN,
+	};
+#endif //defined (CY_USING_HAL)
 const cy_stc_gpio_pin_config_t CYBSP_SWDCK_config = 
 {
 	.outVal = 1,
-	.driveMode = CY_GPIO_DM_PULLDOWN_IN_OFF,
+	.driveMode = CY_GPIO_DM_STRONG,
 	.hsiom = CYBSP_SWDCK_HSIOM,
 	.intEdge = CY_GPIO_INTR_DISABLE,
 	.vtrip = CY_GPIO_VTRIP_CMOS,
@@ -56,11 +64,25 @@ const cy_stc_gpio_pin_config_t CYBSP_SWDCK_config =
 	.vrefSel = 0UL,
 	.vohSel = 0UL,
 };
+#if defined (CY_USING_HAL)
+	const cyhal_resource_inst_t CYBSP_SWDCK_obj = 
+	{
+		.type = CYHAL_RSC_GPIO,
+		.block_num = CYBSP_SWDCK_PORT_NUM,
+		.channel_num = CYBSP_SWDCK_PIN,
+	};
+#endif //defined (CY_USING_HAL)
 
 
 void init_cycfg_pins(void)
 {
 	Cy_GPIO_Pin_Init(CYBSP_SWDIO_PORT, CYBSP_SWDIO_PIN, &CYBSP_SWDIO_config);
+#if defined (CY_USING_HAL)
+	cyhal_hwmgr_reserve(&CYBSP_SWDIO_obj);
+#endif //defined (CY_USING_HAL)
 
 	Cy_GPIO_Pin_Init(CYBSP_SWDCK_PORT, CYBSP_SWDCK_PIN, &CYBSP_SWDCK_config);
+#if defined (CY_USING_HAL)
+	cyhal_hwmgr_reserve(&CYBSP_SWDCK_obj);
+#endif //defined (CY_USING_HAL)
 }

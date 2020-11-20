@@ -2,8 +2,6 @@
 
 ## Overview
 
-Alpha Release Content - Support for PSoC 4 family of devices on ModusToolbox is currently in alpha. Features may change without notice. Contact [Cypress Support](https://www.cypress.com/support) for additional details.
-
 This board support package is intended for creating custom PSoC 4 BSPs.
 
 
@@ -38,8 +36,8 @@ Defines:
 
 | Clock    | Source    | Output Frequency |
 |----------|-----------|------------------|
-| IMO      |           | 36.0 MHz         |
-| CLK_HF   | CLK_IMO   | 36 MHz           |
+| IMO      |           | 48.0 MHz         |
+| CLK_HF   | CLK_IMO   | 48 MHz           |
 
 ### Power Configuration
 

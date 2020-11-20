@@ -4,10 +4,10 @@
 * Description:
 * Simple wrapper header containing all generated files.
 * This file was automatically generated and should not be modified.
-* Tools Package 2.1.0.1266
-* psoc4pdl 1.0.0.912
-* personalities_2.0 2.0.0.0
-* udd_2.0 2.0.0.306
+* Tools Package 2.2.0.2801
+* mtb-pdl-cat2 1.0.0.2377
+* personalities 3.0.0.0
+* udd 3.0.0.746
 *
 ********************************************************************************
 * Copyright 2020 Cypress Semiconductor Corporation
@@ -35,6 +35,7 @@ extern "C" {
 
 #include "cycfg_notices.h"
 #include "cycfg_system.h"
+#include "cycfg_routing.h"
 #include "cycfg_peripherals.h"
 #include "cycfg_pins.h"
 

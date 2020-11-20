@@ -4,10 +4,10 @@
 * Description:
 * System configuration
 * This file was automatically generated and should not be modified.
-* Tools Package 2.1.0.1266
-* psoc4pdl 1.0.0.912
-* personalities_2.0 2.0.0.0
-* udd_2.0 2.0.0.306
+* Tools Package 2.2.0.2801
+* mtb-pdl-cat2 1.0.0.2377
+* personalities 3.0.0.0
+* udd 3.0.0.746
 *
 ********************************************************************************
 * Copyright 2020 Cypress Semiconductor Corporation
@@ -36,6 +36,7 @@
 extern "C" {
 #endif
 
+#define cpuss_0_dap_0_ENABLED 1U
 #define srss_0_clock_0_ENABLED 1U
 #define CY_CFG_SYSCLK_ECO_CFG_ERROR 1
 #define CY_CFG_SYSCLK_ECO_EN_ERROR 2
@@ -45,9 +46,9 @@ extern "C" {
 #define CY_CFG_SYSCLK_HF_SRC_ERROR 6
 #define srss_0_clock_0_hfclk_0_ENABLED 1U
 #define srss_0_clock_0_imo_0_ENABLED 1U
-#define CY_CFG_SYSCLK_IMO_FREQ_HZ 36000000UL
-#define CY_CFG_SYSCLK_IMO_FREQ_MHZ 36UL
-#define CY_CFG_SYSCLK_IMO_FREQ CY_SYSCLK_IMO_36MHZ
+#define CY_CFG_SYSCLK_IMO_FREQ_HZ 48000000UL
+#define CY_CFG_SYSCLK_IMO_FREQ_MHZ 48UL
+#define CY_CFG_SYSCLK_IMO_FREQ CY_SYSCLK_IMO_48MHZ
 #define srss_0_clock_0_sysclk_0_ENABLED 1U
 
 __WEAK void cycfg_ClockStartupError(uint32_t error, cy_en_sysclk_status_t status);

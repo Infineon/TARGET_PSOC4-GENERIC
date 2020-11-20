@@ -14,6 +14,8 @@ The PSOC4-GENERIC library includes the following:
 * API documentation
 
 ### What Changed?
+#### v1.0.0
+* Initial production release
 #### v0.5.0
 * Initial pre-production release
 
@@ -22,10 +24,12 @@ This version of the PSOC4-GENERIC BSP was validated for compatibility with the f
 
 | Software and Tools                        | Version |
 | :---                                      | :----:  |
-| ModusToolbox Software Environment         | 2.1     |
-| GCC Compiler                              | 7.4     |
-| IAR Compiler                              | 8.32    |
+| ModusToolbox Software Environment         | 2.2     |
+| GCC Compiler                              | 9.2     |
+| IAR Compiler                              | 8.4     |
 | ARM Compiler                              | 6.11    |
+
+Minimum required ModusToolbox Software Environment: v2.2
 
 ### More information
 * [PSOC4-GENERIC BSP API Reference Manual][api]

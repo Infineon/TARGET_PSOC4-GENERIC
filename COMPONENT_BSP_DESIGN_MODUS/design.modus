@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Design version="12" xmlns="http://cypress.com/xsd/cydesignfile_v3">
-    <ToolInfo version="2.1.0.1266"/>
+    <ToolInfo version="2.2.0.2801"/>
     <Devices>
         <Device mpn="CY8C4548AZI-S485">
             <BlockConfig>
+                <Block location="cpuss[0].dap[0]">
+                    <Personality template="m0s8dap" version="1.0">
+                        <Param id="dbgMode" value="SWD"/>
+                    </Personality>
+                </Block>
                 <Block location="ioss[0].port[3].pin[2]">
                     <Alias value="CYBSP_SWDIO"/>
                     <Personality template="m0s8pin" version="1.0">
-                        <Param id="DriveModes" value="CY_GPIO_DM_PULLUP_IN_OFF"/>
+                        <Param id="DriveModes" value="CY_GPIO_DM_STRONG"/>
                         <Param id="initialState" value="1"/>
                         <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
                         <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
@@ -18,7 +23,7 @@
                 <Block location="ioss[0].port[3].pin[3]">
                     <Alias value="CYBSP_SWDCK"/>
                     <Personality template="m0s8pin" version="1.0">
-                        <Param id="DriveModes" value="CY_GPIO_DM_PULLDOWN_IN_OFF"/>
+                        <Param id="DriveModes" value="CY_GPIO_DM_STRONG"/>
                         <Param id="initialState" value="1"/>
                         <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
                         <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
@@ -31,13 +36,13 @@
                 </Block>
                 <Block location="srss[0].clock[0].hfclk[0]">
                     <Personality template="m0s8hfclk" version="1.0">
-                        <Param id="sourceClock" value="imo"/>
+                        <Param id="sourceClock" value="IMO"/>
                         <Param id="divider" value="1"/>
                     </Personality>
                 </Block>
                 <Block location="srss[0].clock[0].imo[0]">
                     <Personality template="m0s8imo" version="1.0">
-                        <Param id="frequency" value="36000000"/>
+                        <Param id="frequency" value="48000000"/>
                         <Param id="trim" value="2"/>
                     </Personality>
                 </Block>
@@ -47,7 +52,16 @@
                     </Personality>
                 </Block>
             </BlockConfig>
-            <Netlist/>
+            <Netlist>
+                <Net>
+                    <Port name="cpuss[0].dap[0].swd_clk[0]"/>
+                    <Port name="ioss[0].port[3].pin[3].digital_in[0]"/>
+                </Net>
+                <Net>
+                    <Port name="cpuss[0].dap[0].swd_data[0]"/>
+                    <Port name="ioss[0].port[3].pin[2].digital_inout[0]"/>
+                </Net>
+            </Netlist>
         </Device>
     </Devices>
     <ConfiguratorData/>
