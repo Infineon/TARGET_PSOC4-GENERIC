@@ -67,7 +67,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('md_bsp_settings.html','');});
+$(document).ready(function(){initNavTree('group__group__bsp__pins__comm.html','');});
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -86,33 +86,27 @@ $(document).ready(function(){initNavTree('md_bsp_settings.html','');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
-<div class="title">Peripheral Default HAL Settings </div>  </div>
+<div class="title">Communication Pins<div class="ingroups"><a class="el" href="group__group__bsp__pins.html">Pin Mappings</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadCenter">Resource  </th><th class="markdownTableHeadCenter">Parameter  </th><th class="markdownTableHeadCenter">Value  </th><th class="markdownTableHeadLeft">Remarks   </th></tr>
-<tr class="markdownTableBody" class="markdownTableRowOdd">
-<td class="markdownTableBodyCenter" rowspan="3">I2C  </td><td class="markdownTableBodyCenter">Role  </td><td class="markdownTableBodyCenter">Master  </td><td class="markdownTableBodyLeft">Configurable to slave mode through HAL function   </td></tr>
-<tr class="markdownTableBody" class="markdownTableRowEven">
-<td class="markdownTableBodyCenter">Data rate  </td><td class="markdownTableBodyCenter">100 kbps  </td><td class="markdownTableBodyLeft">Configurable through HAL function   </td></tr>
-<tr class="markdownTableBody" class="markdownTableRowOdd">
-<td class="markdownTableBodyCenter">Drive mode of SCL &amp; SDA pins  </td><td class="markdownTableBodyCenter">Open Drain (drives low)  </td><td class="markdownTableBodyLeft">External pull-up resistors are required   </td></tr>
-<tr class="markdownTableBody" class="markdownTableRowEven">
-<td class="markdownTableBodyCenter" rowspan="2">SPI  </td><td class="markdownTableBodyCenter">Data rate  </td><td class="markdownTableBodyCenter">100 kpbs  </td><td class="markdownTableBodyLeft">Configurable through HAL function   </td></tr>
-<tr class="markdownTableBody" class="markdownTableRowOdd">
-<td class="markdownTableBodyCenter">Slave select polarity  </td><td class="markdownTableBodyCenter">Active low  </td><td class="markdownTableBodyLeft"></td></tr>
-<tr class="markdownTableBody" class="markdownTableRowEven">
-<td class="markdownTableBodyCenter" rowspan="3">UART  </td><td class="markdownTableBodyCenter">Flow control  </td><td class="markdownTableBodyCenter">No flow control  </td><td class="markdownTableBodyLeft">Configurable through HAL function   </td></tr>
-<tr class="markdownTableBody" class="markdownTableRowOdd">
-<td class="markdownTableBodyCenter">Data format  </td><td class="markdownTableBodyCenter">8N1  </td><td class="markdownTableBodyLeft">Configurable through HAL function   </td></tr>
-<tr class="markdownTableBody" class="markdownTableRowEven">
-<td class="markdownTableBodyCenter">Baud rate  </td><td class="markdownTableBodyCenter">115200  </td><td class="markdownTableBodyLeft">Configurable through HAL function   </td></tr>
+<a name="details" id="details"></a><h2 class="groupheader">General Description</h2>
+<p>Pins associated with connections on the board for communication interfaces (UART/I2C/SPI/...) </p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga9fba070d4040d6aa4f3e429bdfc38946"><td class="memItemLeft" align="right" valign="top"><a id="ga9fba070d4040d6aa4f3e429bdfc38946"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group__bsp__pins__comm.html#ga9fba070d4040d6aa4f3e429bdfc38946">CYBSP_SWDIO</a>&#160;&#160;&#160;P3_2</td></tr>
+<tr class="memdesc:ga9fba070d4040d6aa4f3e429bdfc38946"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pin: SWDIO. <br /></td></tr>
+<tr class="separator:ga9fba070d4040d6aa4f3e429bdfc38946"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8f50aad29445466679abdcc75dcd9796"><td class="memItemLeft" align="right" valign="top"><a id="ga8f50aad29445466679abdcc75dcd9796"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__group__bsp__pins__comm.html#ga8f50aad29445466679abdcc75dcd9796">CYBSP_SWDCK</a>&#160;&#160;&#160;P3_3</td></tr>
+<tr class="memdesc:ga8f50aad29445466679abdcc75dcd9796"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pin: SWDCK. <br /></td></tr>
+<tr class="separator:ga8f50aad29445466679abdcc75dcd9796"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>
-<p> © Cypress Semiconductor Corporation, 2019-2021. </p>
-</div></div><!-- contents -->
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part
 <div id="nav-path" class="navpath">
