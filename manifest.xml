@@ -8,9 +8,9 @@
     </chips>
     <name>PSOC4-GENERIC</name>
     <summary>This board support package is intended for creating custom PSoC 4 BSPs.</summary>
-    <prov_capabilities>psoc4 mcu_gp</prov_capabilities>
+    <prov_capabilities>cat2 hal mcu_gp psoc4</prov_capabilities>
     <!-- Here are the capabilities that are used by ModusToolbox that can be enabled in the BSP -->
-    <!--prov_capabilities>psoc4 mcu_gp std_crypto arduino j2 adc capsense capsense_button capsense_linear_slider capsense_radial_slider capsense_touchpad comp dma i2c lptimer opamp spi uart led rgb_led switch pdm i2s fram smart_io ble memory memory_i2c</prov_capabilities-->
+    <!--prov_capabilities>psoc4 mcu_gp std_crypto arduino j2 adc capsense capsense_button capsense_linear_slider capsense_radial_slider capsense_touchpad comp dma hal i2c lptimer opamp spi uart led rgb_led switch pdm i2s fram smart_io ble memory memory_i2c</prov_capabilities-->
     <description><![CDATA[
         <div class="category">Kit Features:</div><ul>
         <li>This is a generic template, there is no corresponding physical board and hence no board-specific macros. The user is expected to create a custom BSP with various pin/hardware details - Refer to KBA230822. Code examples using kit/board resources will not be shown for this BSP until the manifest data for the BSP is updated to include additional capabilities. Refer to ModusToolbox user guide for creating custom manifests.</li>
@@ -21,11 +21,15 @@
         <li>NA</li>
         </ul>
     ]]></description>
-    <documentation_url>https://github.com/cypresssemiconductorco/TARGET_PSOC4-GENERIC</documentation_url>
+    <documentation_url>https://github.com/infineon/TARGET_PSOC4-GENERIC</documentation_url>
     <versions>
       <version tools_min_version="2.2.0" flow_version="1.0,2.0" prov_capabilities_per_version="bsp_gen2">
         <num>Latest 1.X release</num>
         <commit>latest-v1.X</commit>
+      </version>
+      <version tools_min_version="2.2.0" flow_version="1.0,2.0" prov_capabilities_per_version="bsp_gen2">
+        <num>1.2.0 release</num>
+        <commit>release-v1.2.0</commit>
       </version>
       <version tools_min_version="2.2.0" flow_version="1.0,2.0" prov_capabilities_per_version="bsp_gen2">
         <num>1.1.0 release</num>

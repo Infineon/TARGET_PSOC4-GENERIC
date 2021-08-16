@@ -55,13 +55,13 @@ See the [BSP API Reference Manual][api] for the complete list of the provided in
 
 ## More information
 * [PSOC4-GENERIC BSP API Reference Manual][api]
-* [PSOC4-GENERIC Documentation](https://github.com/cypresssemiconductorco/TARGET_PSOC4-GENERIC)
+* [PSOC4-GENERIC Documentation](https://github.com/infineon/TARGET_PSOC4-GENERIC)
 * [Cypress Semiconductor, an Infineon Technologies Company](http://www.cypress.com)
-* [Cypress Semiconductor GitHub](https://github.com/cypresssemiconductorco)
+* [Infineon GitHub](https://github.com/infineon)
 * [ModusToolbox](https://www.cypress.com/products/modustoolbox-software-environment)
 
 [api]: https://cypresssemiconductorco.github.io/TARGET_PSOC4-GENERIC/html/modules.html
 [settings]: https://cypresssemiconductorco.github.io/TARGET_PSOC4-GENERIC/html/md_bsp_settings.html
 
 ---
-© Cypress Semiconductor Corporation, 2019-2021.
+© Cypress Semiconductor Corporation (an Infineon company) or an affiliate of Cypress Semiconductor Corporation, 2019-2021.
